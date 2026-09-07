@@ -15,6 +15,9 @@ import {
   AreaChart,
 } from "recharts";
 
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 /* =========================================================
    SAMPLE PRODUCT DATA
 ========================================================= */
@@ -307,9 +310,9 @@ const handleRunForecast = async () => {
   setForecastStatus("loading");
 
   try {
-    const response = await fetch(
-      "http://127.0.0.1:8000/forecast",
-      {
+    const response = await fetch(`${API_URL}/forecast`, {
+
+    
         method: "POST",
         headers: {
           "Content-Type": "application/json",
