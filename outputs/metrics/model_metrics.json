@@ -1,0 +1,24 @@
+{
+    "best_model": "WeightedEnsemble",
+    "validation_days": 90,
+    "training_rows": 1534,
+    "validation_rows": 90,
+    "validation_start": "2017-05-18",
+    "validation_end": "2017-08-15",
+    "metrics": {
+        "MAE": 30421.211228407636,
+        "RMSE": 42676.846863071805,
+        "MAPE_percent": 3.4593077675089643,
+        "R2": 0.9323751379542496
+    },
+    "ensemble_models": [
+        "XGBoost",
+        "CatBoost",
+        "HistGradientBoosting"
+    ],
+    "ensemble_weights": [
+        0.34482133999615117,
+        0.3324353143819233,
+        0.3227433456219255
+    ]
+}

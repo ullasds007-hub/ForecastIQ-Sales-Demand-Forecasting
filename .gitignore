@@ -1,0 +1,67 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+.venv/
+backend/venv/
+
+# =========================
+# Node / Vite
+# =========================
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+~$*
+
+# =========================
+# Python generated cache
+# =========================
+*.pickle.tmp
+*.joblib.tmp
+# CatBoost training logs
+catboost_info/
+src/catboost_info/
+
+# Large raw training dataset
+data/raw/train.csv
